@@ -1,0 +1,88 @@
+{
+  "common": {
+    "max_tax_pct": 10,
+    "warn_tax_pct": 3,
+    "max_transfer_fee_pct": 2,
+    "established_mcap_usd": 1000000,
+    "established_age_h": 72,
+    "distributed_lp_providers": 20,
+    "wash_vol_to_mcap": 3,
+    "wash_max_holders": 1000,
+    "dev_sold_pct_max": 50,
+    "dev_snipe_sol_warn": 5,
+    "dev_wallet_age_warn_h": 24,
+    "dev_tx_sample": 80,
+    "parabolic_h6_pct": 500,
+    "parabolic_h24_pct": 1000,
+    "off_ath_pct": 50,
+    "dormant_top_max": 3,
+    "dev_sold_min_sol": 1.0
+  },
+  "trench": {
+    "min_mcap_usd": 8000,
+    "max_top10_pct": 35,
+    "max_single_holder_pct": 12,
+    "max_insiders_pct": 15,
+    "max_creator_pct": 5,
+    "min_holders": 50,
+    "max_creator_prior_tokens": 3,
+    "min_txns24": 100,
+    "hard": [
+      "honeypot",
+      "authorities",
+      "tax",
+      "creator_history",
+      "insiders",
+      "top10",
+      "creator_pct",
+      "dev_sold"
+    ]
+  },
+  "fresh": {
+    "min_liq_usd": 8000,
+    "min_lp_locked_pct": 90,
+    "max_top10_pct": 30,
+    "max_single_holder_pct": 10,
+    "max_insiders_pct": 15,
+    "max_creator_pct": 5,
+    "min_holders": 200,
+    "max_creator_prior_tokens": 5,
+    "min_vol24_usd": 20000,
+    "min_txns24": 300,
+    "min_vol24_to_liq": 0.5,
+    "min_liq_to_mcap_pct": 3,
+    "hard": [
+      "honeypot",
+      "authorities",
+      "tax",
+      "contract",
+      "lp_locked",
+      "top10",
+      "insiders",
+      "creator_pct",
+      "liquidity",
+      "dev_sold"
+    ]
+  },
+  "established": {
+    "min_liq_usd": 50000,
+    "min_lp_locked_pct": 80,
+    "max_top10_pct": 25,
+    "max_single_holder_pct": 8,
+    "max_insiders_pct": 10,
+    "max_creator_pct": 3,
+    "min_holders": 1500,
+    "max_creator_prior_tokens": 10,
+    "min_vol24_usd": 100000,
+    "min_txns24": 1000,
+    "min_vol24_to_liq": 0.2,
+    "min_liq_to_mcap_pct": 1,
+    "hard": [
+      "honeypot",
+      "authorities",
+      "tax",
+      "contract",
+      "liquidity"
+    ]
+  }
+}
